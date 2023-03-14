@@ -18,7 +18,7 @@ namespace THYSON\Inc\Helpers;
 function autoloader($resource = '')
 {
     $resource_path  = false;
-    $namespace_root = 'AQUILA_THEME\\';
+    $namespace_root = 'THYSON\\';
     $resource       = trim($resource, '\\');
 
     if (empty($resource) || strpos($resource, '\\') === false || strpos($resource, $namespace_root) !== 0) {
@@ -84,4 +84,4 @@ function autoloader($resource = '')
     }
 }
 
-spl_autoload_register('\AQUILA_THEME\Inc\Helpers\autoloader');
+spl_autoload_register('\THYSON\Inc\Helpers\autoloader');
